@@ -1,0 +1,57 @@
+<html>
+  <head><title>FAMILY ALBUM</title></head>
+  <h1>FAMILY ALBUM BOOK</h1>
+  <h2>SEE MY FAMILY ALBUM</h2>
+   <img id="album" src="https://images-na.ssl-images-amazon.com/images/I/717Kh9Wrv8L._SL1500_.jpg"> </img>
+  
+  <div>
+    <button type="button" onclick="nextslide()">Next photo</button></div>
+  
+  <p id="firstp">My family<p>
+  <audio id="audio" src="https://mahdihat791.github.io/v2/test.mp3"></audio>
+  </p></p>
+  <style>
+     body{
+  text-align:center;
+  background-image:maroon;
+     }
+img{
+  height:500px;
+  width:500px;
+  border-style:solid;
+  border-radius:80px;
+  border-color:blue;
+  padding:5px;
+}
+
+button{
+  width:100px;
+  margin-top:20px;
+  padding-top:5px;
+}
+p{
+  font-size:xx-large;
+} 
+  </style>
+  <script>
+      var members=[
+  "MY FATHER",
+    "MY MOTHER",
+    "MY GRANDMA","MY GRANDPA","ME","FAMILY PHOTO"
+];
+var images=[
+"https://bn1303files.storage.live.com/y4m8Qdyn4bwv8xm7nmnB7uCCt9cl-0NNKi75VFwkNquMsftqd8jeHCVoR0xAyhk60A91KIwgWCpgfogKQHhpI1FY0UVL8pNaY9YkvlCqcRTYOsKmBRbB6p2IJXFFKGBN2k7CNIArwakXYBY8PImSbmWpuCj73KTvYKwLO38JJFHxZUZcmcQPxhJDxlYf_Igm2tl?width=3088&height=2316&cropmode=none","https://bn1303files.storage.live.com/y4mIT2IUIRl075Ks1mFFhQGIag-p6aHVDIZCOBDxjAg5aYbDoGMEbFWumhLLooox_54FuTZ8NRqLLQRGUMd4AGbTAP0zF-xYtw32a_Ncg69zDXB8QGex4fqd2pG9P72RUR6UDHvyjYkxzCki4HDlCkNI3HA3APZtT6yDAETFcKi1Bb0d2EPV0SOgztlyzhBA2SR?width=2715&height=3460&cropmode=none","https://bn1303files.storage.live.com/y4mj9Y4xUVx77iQs6OdrI2lzFmGATcIYB83yEP6-Ghnv3yi6sci2VbRvIHJTV65Qq6x2I63BWcxPvVsmqMK9DxqwOnE1SRM2RWIC8O2OU183ovPtXRbeAHY8dPekgdBKHpXfXMSVS1X93jjal5G1aJVEuo67yCkc2-SqnqfCJrzFpAiC7lLvWUnKNRUwuXGyUPS?width=2157&height=2080&cropmode=none","https://bn1303files.storage.live.com/y4m5iay8Gj5OSh-IxqkmapJdsZwnwnPEybpgjPNaQvnwMpL24Cjyp_7_eoF1_VOThD0VvwyGgoMXRPsG1IKgan5s_Y3uDTXHXgduNpBLLf3CclIBfpsHWnpnJ_8tdgWvxtmLGMMviDhw0gLSd7x7zGAn6v6WwcTZ8W6UWj041DfcsbkxqWVCiGbrrLBVzjIYEXN?width=1345&height=2359&cropmode=none","https://bn1303files.storage.live.com/y4mjDAh72sQScMmCItvmz5K4Nh52ESuivD8VaKuK0Cc3TlPhX4FcmqhFxMKcvCje6KzTGrHDeTFUUoK3nysGqkWFqelMng3TTTOl8c2N1M1qpmg5wq-FzgfeI9uengKCQLvjTTYjMBBQW2XJaybPdVxZR0XBx3upkeB0oYx7rM2yVYVTuzIOMH-N2AT4Q7FgsjG?width=1830&height=1851&cropmode=none","https://bn1303files.storage.live.com/y4mLmgPpxb5uiAlPARFFeVBIAamKo4BHFzEweSRKtm_bXlRsOCHcBZvQWt869flDfl5xdmm3YjyIh7ZuZvu3CK3O-b_Uxd9ti56CH2S1IebflolTPEytSbtKr4y2xRD6rFHFkdmxHRF3_2ErMDyq8rKoM7p8EMTp0MteTjRcw761Tl-g-tIOliTdRzr0BMjunKf?width=1024&height=768&cropmode=none"
+];
+var i=0;
+function nextslide(){
+  if(i == 6)
+     {
+       i=0;
+     }
+  document.getElementById("firstp").innerHTML=members[i];
+  document.getElementById("album").src=images[i];
+  i++;
+  document.getElementById("audio").play()
+};
+  </script>
+  </html>
